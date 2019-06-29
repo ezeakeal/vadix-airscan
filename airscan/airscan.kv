@@ -39,6 +39,7 @@ ScreenManagement:
             text: "Please ensure you are connected to the host\'s WiFi network before beginning the scan!"
 
     Button:
+        name: "scan_button"
         size_hint_x: 0.5
         size_hint_y: None
         height: .3*self.width
@@ -46,7 +47,7 @@ ScreenManagement:
         pos_hint: {'center_x':.5, 'center_y':.4}
         background_down: 'assets/start_button_down.png'
         background_normal: 'assets/start_button.png'
-        on_release: app.root.current = "scanning"
+        on_press: root.scan_button_pressed()
 
     BoxLayout:
         padding: 10

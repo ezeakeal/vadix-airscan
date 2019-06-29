@@ -26,7 +26,7 @@ class ResultScreen(Screen):
         anim.start(self.ids.summary_main)
 
     def render_summary(self, data_report):
-        highest_risk = max([v['risk'] for v in data_report.values()])
+        highest_risk = max([v['risk'] for v in data_report.values()] + [0])
         
         if highest_risk == 0:
             summary_image = 'assets/success.png'
