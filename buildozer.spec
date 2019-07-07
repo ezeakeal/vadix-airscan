@@ -28,7 +28,7 @@ source.include_exts = py,png,jpg,kv,atlas,json
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.6.0
+version = 0.6.1
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -36,7 +36,7 @@ version = 0.6.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pygments,netifaces,requests,jnius,plyer==1.4.0
+requirements = python3,kivy,pygments,netifaces,requests
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -198,7 +198,7 @@ android.permissions = INTERNET,ACCESS_WIFI_STATE,CHANGE_WIFI_STATE
 #android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86
-android.arch = armeabi-v7a
+android.arch = arm64-v8a
 
 #
 # Python for android (p4a) specific
